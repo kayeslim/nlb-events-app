@@ -1,0 +1,28 @@
+# NLB Events Assistant Environment Configuration
+# =============================================
+# Copy this content to a file named ".env" in your project root
+# Remove the .txt extension and ensure the file is named exactly ".env"
+
+# OpenAI API Configuration
+# ------------------------
+# Your OpenAI API key (required for LLM enhancement)
+# Get your key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=your_openai_api_key_here
+
+# LLM Model Configuration
+# -----------------------
+# Model to use for event enhancement
+# Options: gpt-3.5-turbo (fast, cost-effective)
+# Advisory: gpt-3.5-turbo is recommended for most use cases due to cost-effectiveness
+LLM_MODEL=gpt-3.5-turbo
+
+# Note: Temperature and Max Tokens are now hardcoded in the application
+# Temperature: 0.3 (balanced consistency and creativity)
+# Max Tokens: 1000 (standard length responses)
+# These parameters are optimized for event enhancement and JSON generation
+
+# Application Security
+# --------------------
+# Default password for the application
+# Advisory: Change this to a secure password in production
+APP_PASSWORD=nlbevents2024
